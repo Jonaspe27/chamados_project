@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Help Desk • Chamados</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Help Desk</h2>
+      <div id="userBox" class="small"></div>
+    </div>
+
+    <!-- Login -->
+    <div id="loginCard" class="card">
+      <h3>Entrar</h3>
+      <div class="row">
+        <div class="col"><input id="email" placeholder="email" value="admin@local" /></div>
+        <div class="col"><input id="password" type="password" placeholder="senha" value="1234" /></div>
+        <div class="col"><button id="btnLogin">Login</button></div>
+      </div>
+      <p class="small">Dica: admin padrão é criado automaticamente na primeira execução.</p>
+    </div>
+
+    <!-- Nova solicitação -->
+    <div id="newCard" class="card hidden">
+      <h3>Abrir chamado</h3>
+      <div class="row">
+        <div class="col"><input id="subject" placeholder="Assunto" /></div>
+        <div class="col">
+          <select id="priority">
+            <option value="normal">Prioridade: normal</option>
+            <option value="low">Baixa</option>
+            <option value="high">Alta</option>
+            <option value="urgent">Urgente</option>
+          </select>
+        </div>
+        <div class="col"><input id="tags" placeholder="tags separadas por vírgula" /></div>
+      </div>
+      <textarea id="description" rows="4" placeholder="Descreva o problema..."></textarea>
+      <div class="row">
+        <div class="col"><button id="btnCreate">Criar</button></div>
+        <div class="col"><button class="secondary" id="btnLogout">Sair</button></div>
+      </div>
+    </div>
+
+    <div id="filtersCard" class="card hidden">
+      <div class="flex-between">
+        <h3>Chamados</h3>
+        <input id="q" placeholder="buscar..." />
+      </div>
+      <div class="row">
+        <div class="col">
+          <select id="fStatus">
+            <option value="">Status: todos</option>
+            <option>open</option>
+            <option>pending</option>
+            <option>on_hold</option>
+            <option>solved</option>
+            <option>closed</option>
+          </select>
+        </div>
+        <div class="col">
+          <select id="fPriority">
+            <option value="">Prioridade: todas</option>
+            <option>low</option>
+            <option>normal</option>
+            <option>high</option>
+            <option>urgent</option>
+          </select>
+        </div>
+        <div class="col"><button id="btnReload">Atualizar</button></div>
+      </div>
+    </div>
+
+    <div id="listCard" class="card hidden">
+      <div class="list" id="list"></div>
+    </div>
+
+    <div id="toast" class="toast hidden"></div>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chamado • Detalhes</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="/" class="badge">← Voltar</a>
+      <div id="userBox" class="small"></div>
+    </div>
+
+    <div id="card" class="card hidden">
+      <h3 id="subject"></h3>
+      <div class="small" id="meta"></div>
+      <hr/>
+      <p id="description"></p>
+
+      <hr/>
+      <div class="row">
+        <div class="col">
+          <label>Status</label>
+          <select id="status">
+            <option>open</option>
+            <option>pending</option>
+            <option>on_hold</option>
+            <option>solved</option>
+            <option>closed</option>
+          </select>
+        </div>
+        <div class="col">
+          <label>Prioridade</label>
+          <select id="priority">
+            <option>low</option>
+            <option selected>normal</option>
+            <option>high</option>
+            <option>urgent</option>
+          </select>
+        </div>
+        <div class="col">
+          <label>Atribuído a (id do usuário)</label>
+          <input id="assignee" />
+        </div>
+        <div class="col">
+          <button id="btnSave">Salvar alterações</button>
+        </div>
+      </div>
+
+      <hr/>
+      <h4>Comentários</h4>
+      <div id="comments"></div>
+
+      <div class="row" style="margin-top:8px">
+        <div class="col"><input id="comment" placeholder="Escreva um comentário" /></div>
+        <div class="col"><button id="btnComment">Comentar</button></div>
+      </div>
+    </div>
+
+    <div id="toast" class="toast hidden"></div>
+  </div>
+  <script src="/ticketDetail.js"></script>
+</body>
+</html>
