@@ -1,86 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Help Desk • Chamados</title>
-  <link rel="stylesheet" href="/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MSI Automação Manutenção Industrial</title>
+
+estilo.css
+
+<link href="https://fonts.googleapis.com=Poppins:wght@300;400;600;700&display=swap
 </head>
+
 <body>
-  <div class="container">
-    <div class="header">
-      <h2>Help Desk</h2>
-      <div id="userBox" class="small"></div>
-    </div>
 
-    <!-- Login -->
-    <div id="loginCard" class="card">
-      <h3>Entrar</h3>
-      <div class="row">
-        <div class="col"><input id="email" placeholder="email" value="admin@local" /></div>
-        <div class="col"><input id="password" type="password" placeholder="senha" value="1234" /></div>
-        <div class="col"><button id="btnLogin">Login</button></div>
-      </div>
-      <p class="small">Dica: admin padrão é criado automaticamente na primeira execução.</p>
-    </div>
+<header>
+    <div class="container">
+        <h1>MSI</h1>
 
-    <!-- Nova solicitação -->
-    <div id="newCard" class="card hidden">
-      <h3>Abrir chamado</h3>
-      <div class="row">
-        <div class="col"><input id="subject" placeholder="Assunto" /></div>
-        <div class="col">
-          <select id="priority">
-            <option value="normal">Prioridade: normal</option>
-            <option value="low">Baixa</option>
-            <option value="high">Alta</option>
-            <option value="urgent">Urgente</option>
-          </select>
+        <nav>
+            sobre">Sobre</a>
+            #servicosServiços</a>
+            #contato>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+
+    <h2>Automação e Manutenção Industrial</h2>
+
+    <p>
+        Soluções em máquinas e equipamentos industriais.
+    </p>
+
+    .me/5531980251809" target="_blank">
+        Solicitar Orçamento
+    </a>
+
+</section>
+
+<section id="sobre">
+
+    <h2>Sobre a MSI</h2>
+
+    <p>
+        A MSI Automação Manutenção Industrial atua na manutenção,
+        automação e otimização de equipamentos industriais,
+        oferecendo soluções eficientes para aumentar a produtividade
+        e reduzir paradas de produção.
+    </p>
+
+</section>
+
+<section id="servicos">
+
+    <h2>Serviços</h2>
+
+    <div class="servicos">
+
+        <div class="card">
+            <h3>Automação Industrial</h3>
+            <p>CLP, sensores e sistemas automatizados.</p>
         </div>
-        <div class="col"><input id="tags" placeholder="tags separadas por vírgula" /></div>
-      </div>
-      <textarea id="description" rows="4" placeholder="Descreva o problema..."></textarea>
-      <div class="row">
-        <div class="col"><button id="btnCreate">Criar</button></div>
-        <div class="col"><button class="secondary" id="btnLogout">Sair</button></div>
-      </div>
-    </div>
 
-    <div id="filtersCard" class="card hidden">
-      <div class="flex-between">
-        <h3>Chamados</h3>
-        <input id="q" placeholder="buscar..." />
-      </div>
-      <div class="row">
-        <div class="col">
-          <select id="fStatus">
-            <option value="">Status: todos</option>
-            <option>open</option>
-            <option>pending</option>
-            <option>on_hold</option>
-            <option>solved</option>
-            <option>closed</option>
-          </select>
+        <div class="card">
+            <h3>Manutenção Industrial</h3>
+            <p>Preventiva, corretiva e emergencial.</p>
         </div>
-        <div class="col">
-          <select id="fPriority">
-            <option value="">Prioridade: todas</option>
-            <option>low</option>
-            <option>normal</option>
-            <option>high</option>
-            <option>urgent</option>
-          </select>
+
+        <div class="card">
+            <h3>Máquinas Industriais</h3>
+            <p>Diagnóstico e recuperação de equipamentos.</p>
         </div>
-        <div class="col"><button id="btnReload">Atualizar</button></div>
-      </div>
+
+        <div class="card">
+            <h3>Painéis Elétricos</h3>
+            <p>Montagem e adequação de sistemas.</p>
+        </div>
+
     </div>
 
-    <div id="listCard" class="card hidden">
-      <div class="list" id="list"></div>
-    </div>
+</section>
 
-    <div id="toast" class="toast hidden"></div>
-  </div>
-  <script src="/script.js"></script>
+<section id="contato">
+
+    <h2>Contato</h2>
+
+    <p>📍 Rua Adalmo Passos Lopes, 251 - Contagem/MG</p>
+
+    <p>📞 (31) 98025-1809</p>
+
+    <p>📧 contato@msiautomacao.net</p>
+
+    .me/5531980251809" target="_blank">
+        Falar no WhatsApp
+    </a>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 MSI Automação Manutenção Industrial
+    </p>
+
+</footer>
+
 </body>
 </html>
